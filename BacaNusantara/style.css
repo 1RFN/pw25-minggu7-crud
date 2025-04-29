@@ -1,0 +1,138 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('assets/latar.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.6);
+    z-index: -1;
+}
+header {
+    background: linear-gradient(90deg, #d2dd36, #f58442);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header img {
+    vertical-align: middle;
+}
+
+h1 {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    background: white;
+    margin-top: 20px;
+}
+
+.btn, .btn-edit, .btn-delete, .btn-detail {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+}
+
+.btn {
+    background-color: #88d63e;
+}
+
+.btn-edit {
+    background-color: #007bff;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-detail {
+    background-color: #6f42c1;
+}
+
+.filter-box {
+    margin-top: 10px;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 300px;
+}
+
+#popup-notif {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4BB543;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    z-index: 9999;
+}
+
+.swal2-rounded {
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.btn-swal-confirm {
+    background-color: #e53935;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.btn-swal-cancel {
+    background-color: #cfd8dc;
+    color: #37474f;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.swal2-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
